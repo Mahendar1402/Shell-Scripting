@@ -4,10 +4,10 @@ if [ $USERID -ne 0 ]; then
     echo "Please run this script as root or with sudo."
     exit 1
 fi
-dnf install -y figlet
-if [ $? -eq 0 ]; then
-    echo "Figlet installed successfully."
+dnf install -y mysql-server 
+if [ $? -eq 0 ]; then   
+    echo "MySQL Server installed successfully."
 else
-    echo "Failed to install Figlet."
+    echo "Failed to install MySQL Server."
     #exit 1
 fi
