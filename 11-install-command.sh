@@ -4,7 +4,7 @@ if [ $USERID -ne 0 ]; then
     echo "Please run this script as root or with sudo."
     exit 1
 fi
-dnf install -y mysql-server 
+sudo yum install mariadb105-server -y
 if [ $? -eq 0 ]; then   
     echo "MySQL Server installed successfully."
 else
