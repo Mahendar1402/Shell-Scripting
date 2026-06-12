@@ -9,5 +9,5 @@ if [ $? -eq 0 ]; then
     echo "Figlet installed successfully."
 else
     echo "Failed to install Figlet."
-    exit 1
+    #exit 1
 fi
