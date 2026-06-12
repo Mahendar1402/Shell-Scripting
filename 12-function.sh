@@ -13,3 +13,5 @@ else
     echo "Failed to install $PACKAGE"
 fi
 }
+
+install_package $1
